@@ -3,3 +3,4 @@
 /* HPU web team fixes */
 .typing i{background:var(--muted-foreground)}
 .share-actions>button{height:auto}
+.trigger-head .avatar{opacity:1;margin-left:0}
