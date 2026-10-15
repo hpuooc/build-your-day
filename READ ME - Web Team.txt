@@ -1,0 +1,63 @@
+BUILD YOUR DAY AT HPU
+Static web files. Nothing to install, nothing to compile.
+
+WHAT THIS IS
+A single-page quiz that runs entirely in the browser. No server-side
+code, no Node, no build step. Any folder that serves static files will
+host it.
+
+WHAT'S IN HERE
+  index.html      the page
+  config.js       editable settings (see below)
+  assets/         one CSS file and one JavaScript file
+  photos/         all campus images used by the quiz
+  favicon.ico
+
+TO DEPLOY
+Copy the whole folder to wherever it should live, for example
+/admissions/buildyourday/. Open that folder's URL and it runs.
+
+Paths are relative, so it works at the site root or in any subfolder.
+One note: link to it with a trailing slash (/buildyourday/ rather than
+/buildyourday) so the browser resolves the asset paths correctly. Most
+servers add the slash automatically.
+
+SETTINGS YOU CAN CHANGE WITHOUT REBUILDING
+Open config.js in a text editor. It holds:
+  feeWaiverCode   the code shown on the results page
+  visitUrl        the Plan Your Visit button
+  applyUrl        the Apply button
+  slatePostUrl    the Slate form that quiz results post to
+
+Edit the values, keep the quotes, save, and refresh. No other files
+need to change.
+
+SENDING RESULTS TO SLATE
+The quiz is set up to pass along the student ID from the email link,
+the result profile, and all 11 answers in plain text.
+
+Link to the quiz with the student's ID on the end:
+  /buildyourday/?id=[the Slate merge field for the unique ID]
+
+Set slatePostUrl in config.js to your form URL. If it is left empty,
+the quiz still runs normally and simply posts nothing.
+
+Field names we send:
+  student_id
+  result_profile
+  q1_answer through q11_answer
+  completed_at
+
+Happy to rename those to match your form. Just send the field names.
+
+BROWSER SUPPORT
+Current Chrome, Safari, Edge, and Firefox, desktop and mobile. Built
+mobile first, since most students open these on a phone.
+
+ONE IMAGE STILL PENDING
+One answer in the game night question is using a designed placeholder
+graphic while we wait on a face paint photo. Dropping a file named
+q9-d.jpg into the photos folder replaces it automatically. No code
+change needed.
+
+Questions about any of this: CJ
