@@ -79,3 +79,12 @@
 .intro-copy>p:not(.wordmark){margin:0 0 8px;font-size:14px;line-height:1.45}
 .intro-copy .intro-lede{font-size:17px!important;line-height:1.25}
 .intro-screen .lock-content>p,.intro-screen .lock-time{text-shadow:0 2px 16px rgba(20,8,40,.6)}
+/* Button size back to 14px, Save is the outline and Share is solid */
+.gold-button,.hpu-button{font-size:14px;letter-spacing:.04em;min-height:52px;padding:14px 18px}
+.share-actions .gold-button{background:transparent;color:#330072}
+.share-actions .gold-button:hover{background:#330072;color:#fff}
+.share-actions .hpu-button{background:#330072;color:#fff}
+.share-actions .hpu-button:hover{background:#4a1a8a;color:#fff}
+/* Saved card gets the phone's rounded corners */
+.share-card{border-radius:40px;overflow:hidden}
+.share-card footer{border-radius:0 0 40px 40px}
