@@ -69,3 +69,13 @@
 .share-card>div p:before{content:"";position:absolute;left:-21px;top:50%;margin-top:-6.5px;width:9px;height:9px;border-radius:50%;background:var(--primary);border:2px solid #fff}
 .share-card>div b{color:var(--primary);font-weight:900}
 .share-card footer{left:0;right:0;bottom:0;padding:14px 25px;background:var(--primary);color:#fff;font-family:var(--font-display);font-weight:900;font-size:20px;letter-spacing:1px;white-space:nowrap}
+
+/* Intro redesign: glass card over a sharper photo, no accidental text selection */
+.intro-screen,.intro-screen *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.intro-screen .wallpaper-shade{background:linear-gradient(to bottom,rgba(20,8,40,.35),rgba(20,8,40,0) 30%,rgba(20,8,40,.5) 62%,rgba(20,8,40,.88))}
+.intro-copy{margin-top:22px;padding:20px 18px 16px;border-radius:22px;background:rgba(26,15,46,.55);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.intro-copy .wordmark{display:none}
+.intro-copy h1{margin:0 0 14px;font-size:50px}
+.intro-copy>p:not(.wordmark){margin:0 0 8px;font-size:14px;line-height:1.45}
+.intro-copy .intro-lede{font-size:17px!important;line-height:1.25}
+.intro-screen .lock-content>p,.intro-screen .lock-time{text-shadow:0 2px 16px rgba(20,8,40,.6)}
