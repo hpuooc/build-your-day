@@ -88,3 +88,45 @@
 /* Saved card gets the phone's rounded corners */
 .share-card{border-radius:40px;overflow:hidden}
 .share-card footer{border-radius:0 0 40px 40px}
+
+/* Round 6: brand purple, intro without the card, centered start button, square saved card, fuller confetti */
+:root{--background:#330072;--primary:#330072;--ring:#9678D3}
+.intro-copy{margin-top:26px;padding:0;border:0;border-radius:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none}
+.intro-copy h1,.intro-copy>p{text-shadow:0 2px 14px rgba(20,8,40,.75)}
+.intro-screen .wallpaper-shade{background:linear-gradient(to bottom,rgba(20,8,40,.35),rgba(20,8,40,.05) 26%,rgba(20,8,40,.6) 48%,rgba(20,8,40,.9) 72%,rgba(20,8,40,.95))}
+.unlock{position:relative;justify-content:center;text-align:center}
+.unlock svg{position:absolute;right:22px;margin:0}
+.share-card,.share-card footer{border-radius:0}
+.confetti i{top:-6%;transform:rotate(25deg);animation-timing-function:linear}
+.confetti i:nth-child(1){left:-0.4%;width:6px;height:10px;animation-duration:1.78s;animation-delay:-1.69s;background:var(--lavender)}
+.confetti i:nth-child(2){left:3.0%;width:6px;height:10px;animation-duration:1.67s;animation-delay:-1.32s;background:#fff}
+.confetti i:nth-child(3){left:6.4%;width:9px;height:10px;animation-duration:1.68s;animation-delay:-0.24s;background:#41B6E6}
+.confetti i:nth-child(4){left:10.7%;width:6px;height:16px;animation-duration:1.75s;animation-delay:-0.58s;background:var(--gold)}
+.confetti i:nth-child(5){left:12.1%;width:7px;height:14px;animation-duration:1.87s;animation-delay:-1.45s;background:var(--lavender)}
+.confetti i:nth-child(6){left:16.3%;width:7px;height:10px;animation-duration:2.25s;animation-delay:-1.48s;background:#fff}
+.confetti i:nth-child(7){left:20.0%;width:6px;height:10px;animation-duration:2.37s;animation-delay:-0.97s;background:#41B6E6}
+.confetti i:nth-child(8){left:23.4%;width:8px;height:16px;animation-duration:2.2s;animation-delay:-1.38s;background:var(--gold)}
+.confetti i:nth-child(9){left:26.6%;width:7px;height:12px;animation-duration:2.14s;animation-delay:-0.78s;background:var(--lavender)}
+.confetti i:nth-child(10){left:28.7%;width:8px;height:16px;animation-duration:1.96s;animation-delay:-1.29s;background:#fff}
+.confetti i:nth-child(11){left:32.5%;width:9px;height:12px;animation-duration:2.78s;animation-delay:-0.31s;background:#41B6E6}
+.confetti i:nth-child(12){left:36.9%;width:6px;height:10px;animation-duration:1.78s;animation-delay:-1.27s;background:var(--gold)}
+.confetti i:nth-child(13){left:40.2%;width:8px;height:14px;animation-duration:2.29s;animation-delay:-2.28s;background:var(--lavender)}
+.confetti i:nth-child(14){left:43.4%;width:9px;height:10px;animation-duration:2.31s;animation-delay:-1.51s;background:#fff}
+.confetti i:nth-child(15){left:47.0%;width:6px;height:10px;animation-duration:2.73s;animation-delay:-1.23s;background:#41B6E6}
+.confetti i:nth-child(16){left:50.1%;width:9px;height:14px;animation-duration:1.97s;animation-delay:-1.5s;background:var(--gold)}
+.confetti i:nth-child(17){left:53.3%;width:9px;height:14px;animation-duration:2.66s;animation-delay:-0.9s;background:var(--lavender)}
+.confetti i:nth-child(18){left:55.3%;width:8px;height:12px;animation-duration:1.74s;animation-delay:-0.15s;background:#fff}
+.confetti i:nth-child(19){left:60.0%;width:9px;height:10px;animation-duration:2.08s;animation-delay:-2.38s;background:#41B6E6}
+.confetti i:nth-child(20){left:61.9%;width:7px;height:16px;animation-duration:2.08s;animation-delay:-0.72s;background:var(--gold)}
+.confetti i:nth-child(21){left:66.9%;width:8px;height:16px;animation-duration:1.93s;animation-delay:-1.08s;background:var(--lavender)}
+.confetti i:nth-child(22){left:70.4%;width:7px;height:12px;animation-duration:1.78s;animation-delay:-0.46s;background:#fff}
+.confetti i:nth-child(23){left:71.4%;width:8px;height:10px;animation-duration:2.6s;animation-delay:-0.47s;background:#41B6E6}
+.confetti i:nth-child(24){left:75.0%;width:8px;height:12px;animation-duration:2.24s;animation-delay:-1.59s;background:var(--gold)}
+.confetti i:nth-child(25){left:79.7%;width:6px;height:16px;animation-duration:2.22s;animation-delay:-1.61s;background:var(--lavender)}
+.confetti i:nth-child(26){left:83.5%;width:9px;height:16px;animation-duration:2.54s;animation-delay:-2.27s;background:#fff}
+.confetti i:nth-child(27){left:85.6%;width:6px;height:12px;animation-duration:1.72s;animation-delay:-1.65s;background:#41B6E6}
+.confetti i:nth-child(28){left:88.1%;width:8px;height:10px;animation-duration:1.85s;animation-delay:-0.42s;background:var(--gold)}
+.confetti i:nth-child(29){left:91.4%;width:8px;height:10px;animation-duration:2.28s;animation-delay:-1.4s;background:var(--lavender)}
+.confetti i:nth-child(30){left:94.7%;width:8px;height:14px;animation-duration:1.85s;animation-delay:-0.98s;background:#fff}
+.camera-roll{grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:6px}
+.camera-polaroid{height:auto}
