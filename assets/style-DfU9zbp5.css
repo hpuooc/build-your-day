@@ -194,3 +194,10 @@
 .share-card--grid footer{position:static;flex:none;margin-top:auto}
 .share-card--grid>.sc-line p{flex:1 1 auto;max-height:none}
 .share-card--grid>.sc-line p:before{left:-18px}
+/* Saved card rows: time and activity share one vertical center */
+.share-card--grid>.sc-line p{align-items:center;align-content:center}
+.share-card--grid>.sc-line p>b,.share-card--grid>.sc-line p>span{display:block;align-self:center;margin:0;line-height:1.25}
+/* Desktop: photo grid spans the full width, shorter tiles so the question still fits */
+@media(min-width:600px){.camera-roll{max-width:none}.camera-roll .camera-polaroid{aspect-ratio:1/0.5}.camera-roll .camera-polaroid:nth-child(n+7){aspect-ratio:1/0.62}}
+.share-card--grid>.sc-line p>b,.share-card--grid>.sc-line p>span{display:flex;align-items:center;height:100%}
+.share-card--grid>.sc-line p{grid-template-columns:50px 1fr;padding:3px 8px 3px 10px}
