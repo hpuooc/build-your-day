@@ -130,3 +130,19 @@
 .confetti i:nth-child(30){left:94.7%;width:8px;height:14px;animation-duration:1.85s;animation-delay:-0.98s;background:#fff}
 .camera-roll{grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:6px}
 .camera-polaroid{height:auto}
+
+/* Layered camera roll: bigger overlapping prints */
+.camera-roll{display:block;position:relative;height:262px;margin-bottom:6px;padding:0;overflow:visible;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.camera-roll .camera-polaroid{position:absolute;width:31%;height:auto;aspect-ratio:1/1.12;padding:4px 4px 14px;box-shadow:0 6px 16px rgba(0,0,0,.4);transform:rotate(var(--rot,0deg));animation:photo-drop .35s var(--delay,0s) ease both}
+.camera-roll .camera-polaroid .moment-image{height:100%}
+@keyframes photo-drop{0%{opacity:0;transform:translateY(16px) rotate(var(--rot,0deg)) scale(.85)}to{opacity:1;transform:rotate(var(--rot,0deg))}}
+.camera-roll .camera-polaroid:nth-child(1){left:0.0%;top:2%;z-index:1;--rot:-5deg}
+.camera-roll .camera-polaroid:nth-child(2){left:16.5%;top:2%;z-index:2;--rot:5deg}
+.camera-roll .camera-polaroid:nth-child(3){left:33.0%;top:2%;z-index:3;--rot:5deg}
+.camera-roll .camera-polaroid:nth-child(4){left:49.5%;top:2%;z-index:4;--rot:-5deg}
+.camera-roll .camera-polaroid:nth-child(5){left:66.0%;top:2%;z-index:5;--rot:-3deg}
+.camera-roll .camera-polaroid:nth-child(6){left:3.0%;top:50%;z-index:6;--rot:5deg}
+.camera-roll .camera-polaroid:nth-child(7){left:19.5%;top:50%;z-index:7;--rot:3deg}
+.camera-roll .camera-polaroid:nth-child(8){left:36.0%;top:50%;z-index:8;--rot:7deg}
+.camera-roll .camera-polaroid:nth-child(9){left:52.5%;top:50%;z-index:9;--rot:5deg}
+.camera-roll .camera-polaroid:nth-child(10){left:69.0%;top:50%;z-index:10;--rot:-7deg}
