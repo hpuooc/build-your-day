@@ -146,3 +146,21 @@
 /* If a background ever fails to load, show the gradient instead of alt text */
 .scene{background:linear-gradient(145deg,var(--moment-a,var(--primary)),var(--moment-b,var(--lavender)))}
 .scene>img{color:transparent;font-size:0}
+
+/* Saved card v3: personality header, photo grid of the day, quote and three highlights */
+.share-card--grid{background:#F5F5F5}
+.sc-head{background:var(--primary);color:#fff;padding:28px 22px 18px}
+.share-card .sc-head h2{margin:0 0 8px;padding:0;background:none;font-size:40px;line-height:.86}
+.sc-head span{display:block;font-size:11.5px;line-height:1.35;opacity:.92}
+.share-card>.sc-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;margin:12px 14px 0;padding:0;border:0}
+.sc-tile{position:relative;grid-column:span 4;aspect-ratio:1/.8;overflow:hidden;border-radius:4px}
+.sc-tile:nth-child(n+7){grid-column:span 3;aspect-ratio:1/1}
+.sc-tile .moment-image{height:100%}
+.sc-tile .designed-placeholder svg{width:22px;height:22px}
+.sc-tile .designed-placeholder strong{font-size:7px}
+.sc-quote{margin:10px 14px 0;padding:9px 12px;background:#fff;border-left:4px solid var(--gold);border-radius:0 6px 6px 0;font-family:var(--font-hand);font-size:17px;font-weight:700;line-height:1.1;color:var(--primary)}
+.share-card>.sc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 14px 0;padding:0;border:0}
+.sc-stats>div{background:#fff;border-radius:6px;padding:7px 8px 8px;border-top:3px solid var(--primary)}
+.sc-stats small{display:block;font-size:8px;letter-spacing:1px;text-transform:uppercase;font-weight:800;color:#818183}
+.sc-stats b{display:block;margin:2px 0;font-size:10px;font-weight:900;color:var(--primary)}
+.sc-stats span{display:block;font-size:9px;line-height:1.25;color:#45454A}
